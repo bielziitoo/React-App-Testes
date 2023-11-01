@@ -1,3 +1,4 @@
+//unused
 function Food(){
 
     let food1 = 'Maça'

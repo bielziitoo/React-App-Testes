@@ -4,7 +4,7 @@ import Footer from './componentes/Footer.jsx'
 import Card from './componentes/Card.jsx'
 import Students from './componentes/Students.jsx'
 import ListGroup from './componentes/ListGroup.jsx'
-import NewList from './componentes/NewList.jsx'
+/* import NewList from './componentes/NewList.jsx' */
 import UserGreeting from './componentes/UserGreeting.jsx'
 import List from './componentes/List.jsx'
 import ProgressBar from './componentes/ProgressBar.jsx'
@@ -44,8 +44,7 @@ function App() {
       <ListGroup title={'Cidades'}/>
       <ListGroup title={'Comidas'} item1={'Torta de Maça'} item2={'Bolo de Cenoura'} item3={'Pavê'} item4={'Bolo de Chocolate'} item5={'Espinafre'}/>
       <ListGroup />
-      {/* deu ruim a newlist */}
-      <NewList />
+      {/* <NewList /> */}
       <hr />
       <List items={frutas} categoria={'Frutas'} />
       <List items={vegetais} categoria={'Vegetais'}/>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ListGroup from "./ListGroup";
 
+//unused
 function NewList (){
     const [clicou, setClicou] = useState('')
     const [item1, setItem1] = useState('')
