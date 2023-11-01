@@ -7,9 +7,10 @@ function ProgressBar() {
         gsap.registerPlugin(ScrollTrigger);
         gsap.to('progress', {
             value: 100,
-            ScrollTrigger: {
-                scrub: 0.5,
-            },
+            scrollTrigger: {
+                trigger: 'progress',
+                scrub: true,
+            }
         });
     }, []);
 
