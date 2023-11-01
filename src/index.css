@@ -228,3 +228,24 @@ h1 {
 .div-List .ul-List li:hover {
     background-color: #afb3b4;
 }
+
+progress {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border: none;
+    background: transparent;
+}
+
+progress::-webkit-progress-bar {
+    background: #ffffff;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(160, 201, 255);
+}

@@ -7,6 +7,7 @@ import ListGroup from './componentes/ListGroup.jsx'
 import NewList from './componentes/NewList.jsx'
 import UserGreeting from './componentes/UserGreeting.jsx'
 import List from './componentes/List.jsx'
+import ProgressBar from './componentes/ProgressBar.jsx'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      <ProgressBar />
       <Header />
       <UserGreeting username='Gabriel'/>
       <hr />
