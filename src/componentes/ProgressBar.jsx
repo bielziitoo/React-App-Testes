@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/all';
+import ScrollTrigger from 'gsap/src/ScrollTrigger';
 import { useEffect } from 'react';
 
 function ProgressBar() {
@@ -8,14 +8,13 @@ function ProgressBar() {
         gsap.to('progress', {
             value: 100,
             scrollTrigger: {
-                trigger: 'progress',
-                scrub: true,
+                scrub: 0.5,
             }
         });
     }, []);
 
     return (
-        <progress max={100} value={0}></progress>
+        <progress max='100' value='0'></progress>
     )
 }
 
