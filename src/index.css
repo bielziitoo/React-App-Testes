@@ -1,0 +1,230 @@
+#root {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+    text-align: center;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card  {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgba(122, 122, 122, 0.993);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(99, 99, 99);
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardP {
+    background-color: rgb(230, 229, 229);
+    padding: 1px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 20%);
+}
+
+.card .pfp {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 3px 5px 5px rgb(158, 158, 158);
+}
+
+.card .nome {
+    margin: 10;
+    color: hsl(0, 0%, 10%);
+}
+
+.headerRoot .nav-bar {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: left;
+    justify-items: left;
+}
+
+.headerRoot .nav-bar .as {
+    /* display: inline-block; */
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #dbe0e2;
+}
+
+.headerRoot .nav-bar .as:hover{
+    background-color: #bbbfc0;
+}
+
+.headerRoot .nome-pagina {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    margin-top: 10px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #c7cecf;
+    padding: 10px;
+    max-width: fit-content;
+}
+
+.students-div {
+    background-color: #d6dddf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px;
+    text-align: center;
+    justify-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px;
+    max-width: 300px;
+    display: inline-block;
+}
+
+.students-div .students-ps {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+    justify-items: center;
+    max-width: 300px;
+    padding: 5px;
+}
+
+.students-div img{
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 2px 2px 5px;
+
+}
+
+.div-ul {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #d2d7d8;
+    display: inline-block;
+    max-width: 500px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px;
+}
+
+.div-ul .ul-itens {
+    /* border: 1px solid; */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    list-style: none;
+    background-color: #c8cbcc;
+}
+
+.div-ul .ul-itens .li-ul {
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-ul .ul-itens .li-ul:hover {
+    background-color: #c7cecf;
+    border-radius: 10px;
+}
+
+.ativo {
+    background-color: #aeb2b3;
+    border-radius: 10px;
+}
+
+.div-inicial-new-list {
+    background-color: #dfe2e2;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.div-inicial-new-list .criar-new-list {
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.div-new-list {
+    background-color: #979a9b;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    margin: 10px;
+}
+
+.div-new-list .input-new-list {
+    height: 25px;
+    font-size: 20px;
+}
+
+.div-new-list .submit-new-list {
+    font-size: 20px;
+}
+
+.div-greeting {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 11%;
+    right: 2%;
+}
+
+.user-greeting {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #bedee9;
+    padding: 10px;
+}
+
+.btn-greeting {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #bedee9;
+    padding: 10px;
+    margin-top: 25px;
+    top: 20%;
+}
+
+.div-List {
+    border-radius: 10px;
+    background-color: #dadddd;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: center;
+}
+
+.div-List .h3-List {
+    background-color: #979a9b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.div-List .ul-List li{
+    list-style: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.div-List .ul-List li:hover {
+    background-color: #afb3b4;
+}
