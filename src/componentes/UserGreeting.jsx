@@ -5,7 +5,21 @@ function UserGreeting(props) {
 
     const [logado, setLogado] = useState(0);
 
-    const greetingTrue = <div className='div-greeting'><h2 className='user-greeting'>Bem vindo, {props.username}</h2></div>;
+    let data = new Date().getHours();
+
+    let condicao;
+    
+    if (data < 20 && data > 12) {
+        condicao = 'Boa tarde, ';
+    }
+    else if (data >= 20 && data <= 7) {
+        condicao = 'Boa noite, ';
+    }
+    else {
+        condicao = 'Bom dia, ';
+    }
+
+    const greetingTrue = <div className='div-greeting'><h2 className='user-greeting'>{condicao}{props.username}</h2></div>;
 
     if(logado === 1){
         return greetingTrue
