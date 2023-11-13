@@ -9,6 +9,7 @@ import UserGreeting from './componentes/UserGreeting.jsx'
 import List from './componentes/List.jsx'
 import ProgressBar from './componentes/ProgressBar.jsx'
 import Button from './componentes/Button.jsx'
+import UseEffect from './componentes/UseEffect.jsx'
 
 function App() {
 
@@ -31,8 +32,8 @@ function App() {
       <UserGreeting username='Gabriel'/>
       <hr />
       <Card />
-      <Card />
-      <Card />
+      {/* <Card />
+      <Card /> */}
       <hr />
       <h1>Estudantes</h1>
       <Students nome='Jorge Gordo' idade={30} estuda={true} />
@@ -52,6 +53,7 @@ function App() {
       <List></List>
       <hr />
       <Button />
+      <UseEffect />
       <hr />
       <Footer />
     </>
