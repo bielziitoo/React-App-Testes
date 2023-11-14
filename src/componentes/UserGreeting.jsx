@@ -9,10 +9,10 @@ function UserGreeting(props) {
 
     let condicao;
     console.log(`Hora: ${data}`)
-    if (data >= 12 && data < 20) {
+    if (data >= 12 && data < 18) {
         condicao = 'Boa tarde, ';
     }
-    else if (data >= 20) {
+    else if (data >= 18) {
         condicao = 'Boa noite, ';
     }
     else {
