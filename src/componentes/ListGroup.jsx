@@ -1,7 +1,11 @@
 import { useState } from "react";
 import PropTypes from 'prop-types'
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext.jsx'
 
 function ListGroup(props) {
+
+    const {theme} = useContext(ThemeContext);
 
     let items = [
         props.item1,
@@ -14,7 +18,7 @@ function ListGroup(props) {
     const [selecionado, setSelecionado] = useState(-1)
 
     return (
-        <div className="div-ul">
+        <div className={`div-ul ${theme === "dark" ? "dark-div-ul" : ""}`}>
             <h1>{props.title}</h1>
             {/*A expressao && quando a primeira condicao é true, retorna a segunda*/}
             {items.length === 0 && <p>Nenhum item encontrado.</p>}

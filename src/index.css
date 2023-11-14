@@ -42,6 +42,25 @@ h1 {
     color: hsl(0, 0%, 10%);
 }
 
+.dark-card {
+    background-color: #2e2e31;
+    color: white;
+    box-shadow: 3px 5px 5px rgb(77, 76, 76);
+}
+
+.dark-card .cardP {
+    background-color: #444447;
+    color: white;
+}
+
+.dark-card .nome {
+    color: white;
+}
+
+.dark-card .pfp {
+    box-shadow: 3px 5px 5px rgb(80, 78, 78);
+}
+
 .headerRoot .nav-bar {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -62,9 +81,8 @@ h1 {
     background-color: #bbbfc0;
 }
 
-.headerRoot .nome-pagina {
+.nome-pagina {
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 40px;
     margin-top: 10px;
     text-align: left;
     border-radius: 10px;
@@ -105,6 +123,21 @@ h1 {
 
 }
 
+.dark-students {
+    background-color: #535353;
+    color: white;
+    box-shadow: 3px 3px 5px rgb(34, 34, 34);
+}
+
+.dark-students .students-ps {
+    color: white;
+    background-color: #3d3e3f;
+}
+
+.dark-students img {
+    box-shadow: 2px 2px 5px black;
+}
+
 .div-ul {
     border: 1px solid black;
     border-radius: 5px;
@@ -141,6 +174,24 @@ h1 {
     background-color: #aeb2b3;
     border-radius: 10px;
 }
+
+.dark-div-ul {
+    background-color: #393a3b;
+    box-shadow: 3px 3px 5px rgb(22, 22, 22);
+}
+
+.dark-div-ul .ul-itens {
+    background-color: #545558;
+}
+
+.dark-div-ul .ul-itens .li-ul:hover{
+    background-color: #454749;
+}
+
+.dark-div-ul .ativo {
+    background-color: #47474b;
+}
+
 
 .div-inicial-new-list {
     background-color: #dfe2e2;
@@ -179,24 +230,39 @@ h1 {
     display: flex;
     justify-content: right;
     position: absolute;
-    top: 11%;
-    right: 2%;
+    top: 0%;
+    left: 80%;
 }
 
 .user-greeting {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
-    background-color: #bedee9;
+    background-color: #dee7eb;
     padding: 10px;
+    top: 20px;
+    margin-top: 25px;
+    margin-right: 70%;
+    max-width: max-content;
+    z-index: 0;
 }
 
 .btn-greeting {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
-    background-color: #bedee9;
+    background-color: #dcebf0;
     padding: 10px;
     margin-top: 25px;
     top: 20%;
+}
+
+.dark-div-greeting .btn-greeting {
+    background-color: #3a3b3d;
+    color: white;
+}
+
+.dark-div-greeting .user-greeting{
+    background-color: #3f3e3e;
+    color: white;
 }
 
 .div-List {
@@ -225,7 +291,20 @@ h1 {
     background-color: #afb3b4;
 }
 
-progress {
+.dark-div-List {
+    background-color: #3d3e3f;
+    box-shadow: 3px 3px 5px black;
+}
+
+.dark-div-List .h3-List {
+    background-color: #2e2e31;
+}
+
+.dark-div-List .ul-List li:hover{
+    background-color: #272626;
+}
+
+.progress-bar {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -238,12 +317,16 @@ progress {
     background: transparent;
 }
 
-progress::-webkit-progress-bar {
+.progress-bar::-webkit-progress-bar {
     background: #ffffff;
 }
 
-progress::-webkit-progress-value {
+.progress-bar::-webkit-progress-value {
     background-color: rgb(160, 201, 255);
+}
+
+.dark-progress-bar::-webkit-progress-value {
+    background-color: #2a2b2c;
 }
 
 .div-github-api {
@@ -252,6 +335,7 @@ progress::-webkit-progress-value {
     background-color: #c8cbcc;
     padding: 10px;
     text-align: center;
+    margin: 10px;
 }
 
 .div-github-api .github-avatar {
@@ -262,6 +346,119 @@ progress::-webkit-progress-value {
 .div-github-api .github-dados {
     background-color: #aeb3b4;
     border-radius: 5px;
-    padding: 1px;
+    padding: 5px;
     margin: 10px;
 }
+
+.dark-github-api {
+    background-color: #272626;
+    box-shadow: 3px 3px 5px black;
+    display: inline-block;
+}
+
+.dark-github-api .github-avatar {
+    box-shadow: 3px 3px 5px black;
+}
+
+.dark-github-api .github-dados {
+    background-color: #393a3b;
+}
+
+.header-um {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.btn-toggle-theme {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #e1e5e6;
+    padding: 10px;
+    position: absolute;
+    margin-left: 83%;
+    min-width: 100px;
+    max-width: fit-content;
+    top: 20px;
+    z-index: 10;
+}
+
+.p-btn-theme {
+    background-color: #c3c4c4;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.dark-header .nome-pagina{
+    background-color: #3e4041;
+}
+
+.dark-header .btn-toggle-theme{
+    background-color: #3a3b3d;
+    color: white;
+}
+
+.dark-header .p-btn-theme {
+    background-color: #2a2b2c;
+    color: white;
+}
+
+.div-Button-class {
+    text-align: center;
+}
+
+.div-btn-render {
+    display: inline-block;
+    background-color: #d6dbe0;
+    text-align: center;
+    min-width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 3px rgb(94, 92, 92);
+}
+
+.div-btn-render .btn-render {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.div-btn-render .p-render {
+    background-color: #c6cace;
+    padding: 10px;
+}
+
+.dark-btn-render {
+    background-color: #272626;
+    box-shadow: 3px 3px 5px black;
+}
+
+.dark-btn-render .btn-render {
+    background-color: rgb(81, 81, 87);
+    color: white;
+}
+
+.dark-btn-render .p-render {
+    color: white;
+    background-color: #272626;
+}
+
+.btn-clicaai {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    display: inline-flex;
+    background-color: #e4e5eb;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(99, 98, 98);
+}
+
+.dark-btn-clicaai {
+    background-color: rgb(71, 71, 75);
+    color: white;
+    box-shadow: 3px 3px 5px black;
+}
+

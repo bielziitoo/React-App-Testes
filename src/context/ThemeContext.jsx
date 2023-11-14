@@ -4,7 +4,7 @@ export const ThemeContext = createContext();
 
 // eslint-disable-next-line react/prop-types
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
     const toggleTheme = () => {
         setTheme(theme === 'light' ? 'dark' : 'light');

@@ -1,14 +1,15 @@
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+
 function Header() {
+
+    const {theme, toggleTheme} = useContext(ThemeContext);
+
     return(
-        <header className="headerRoot">
+        <div className={`header-um ${theme === "dark" ? "dark-header" : ""}`}>
             <h1 className="nome-pagina">Portfólio</h1>
-            <nav className="nav-bar">
-                <ul><a href="#" className="as">Home</a></ul>
-                <ul><a href="#" className="as">About</a></ul>
-                <ul><a href="#" className="as">Contact</a></ul>
-                <ul><a href="#" className="as">Something Else</a></ul>
-            </nav>
-        </header>
+            <button onClick={toggleTheme} className="btn-toggle-theme">Mudar tema <p className="p-btn-theme">O tema atual é: {theme}</p></button>
+        </div>
     );
 }
 

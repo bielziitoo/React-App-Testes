@@ -1,8 +1,13 @@
 import PropTypes from 'prop-types'
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext.jsx'
 
 function Student(props) {
+
+    const {theme} = useContext(ThemeContext);
+
     return (
-        <div className="students-div">
+        <div className={`students-div ${theme === "dark" ? "dark-students" : ""}`}>
             <img src='https://via.placeholder.com/100' alt="foto de perfil do estudante" />
             <div className="students-ps">
                 <p>Nome: {props.nome}</p>

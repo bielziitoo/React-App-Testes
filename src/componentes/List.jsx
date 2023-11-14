@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types'
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext.jsx'
 
 function List(props) {
     
     const items = props.items;
     const categoria = props.categoria;
+    const {theme} = useContext(ThemeContext);
 
     //frutas.sort((a, b) => a.nome.localeCompare(b.nome)); //nomes em alfabetico
     //frutas.sort((a, b) => b.nome.localeCompare(a.nome)); //nomes em anti alfabetico
@@ -16,7 +19,7 @@ function List(props) {
     const listItens = items.map(fruta => <li key={fruta.id}>{fruta.nome}: &nbsp; <b>{fruta.calorias}</b> calorias.</li>);
 
     return(
-        <div className='div-List'>
+        <div className={`div-List ${theme === "dark" ? "dark-div-List" : ""}`}>
             <h3 className='h3-List'>{categoria}</h3>
             <ul className='ul-List'>{listItens}</ul>
         </div>

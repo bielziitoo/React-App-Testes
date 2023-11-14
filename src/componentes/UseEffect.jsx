@@ -1,22 +1,11 @@
 import { useState, useEffect } from "react";
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext.jsx'
 
 function UseEffect () {
 
-    const [count, setCount] = useState(0);
     const [user, setUser] = useState();
-
-    useEffect(() => {
-        console.log('Salve a cada render')
-    }, [count])
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            console.log(`o incrementador foi alterado ${count} vezes.`)
-        }, 3000)
-        return () => {
-            clearTimeout(timer)
-        };
-    }, [count])
+    const {theme} = useContext(ThemeContext);
 
     useEffect(() => {
         fetch('https://api.github.com/users/bielziitoo')
@@ -26,12 +15,9 @@ function UseEffect () {
 
     return(
         <>
-            <div>
-                <button onClick={() => setCount(prevCount => prevCount + 1)}>Render</button>
-                <p>{count}</p>
-            </div>
+            
             {user && (
-                <div className="div-github-api">
+                <div className={`div-github-api ${theme === "dark" ? "dark-github-api" : ""}`}>
                     <h2>Dados do usuário github:</h2>
                     <div className="github-dados">
                         <h3>Nome: {user.name}</h3>

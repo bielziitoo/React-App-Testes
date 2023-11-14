@@ -9,14 +9,11 @@ import List from '../componentes/List.jsx'
 import ProgressBar from '../componentes/ProgressBar.jsx'
 import Button from '../componentes/Button.jsx'
 import UseEffect from '../componentes/UseEffect.jsx'
+import Header from '../componentes/Header.jsx'
 
-
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import '../index.css'
 
 const Home = () => {
-
-    const {theme, toggleTheme} = useContext(ThemeContext);
 
     const frutas = [{id: 1, nome: 'maça', calorias: 95}, 
                     {id: 2, nome: 'laranja', calorias: 47}, 
@@ -32,10 +29,7 @@ const Home = () => {
     
     return (
         <div>
-            <h1>Pagina inicial</h1>
-            <button onClick={toggleTheme}>Mudar tema</button>
-            <p>O tema atual é: {theme}</p>
-
+            <Header />
             <ProgressBar />
             {/* <Header /> */}
             <UserGreeting username='Gabriel'/>
@@ -62,6 +56,7 @@ const Home = () => {
             <List></List>
             <hr />
             <Button />
+            <hr />
             <UseEffect />
             <hr />
             <Footer />

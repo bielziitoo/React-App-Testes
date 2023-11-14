@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom'
 import { useContext } from 'react';
 import { ThemeContext } from './context/ThemeContext.jsx'
 import './App.css'
+import './index.css'
 
 function App() {
 
