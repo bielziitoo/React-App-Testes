@@ -38,7 +38,6 @@ const Home = () => {
             {/* <Card />
             <Card /> */}
             <hr />
-            <h1>Estudantes</h1>
             <Students nome='Jorge Gordo' idade={30} estuda={true} />
             <Students nome='Magrão da Silva' idade={30} estuda={false} />
             <Students nome='Gerson Flor' idade={34} estuda={false} />

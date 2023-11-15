@@ -9,8 +9,7 @@ h1 {
 }
 
 .card  {
-    background-color: rgb(238, 238, 238);
-    border: 1px solid rgba(122, 122, 122, 0.993);
+    background-color: rgba(240, 240, 240, 0.8);
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(99, 99, 99);
     padding: 20px;
@@ -43,42 +42,24 @@ h1 {
 }
 
 .dark-card {
-    background-color: #2e2e31;
+    background-color: #272626;
     color: white;
-    box-shadow: 3px 5px 5px rgb(77, 76, 76);
+    box-shadow: 3px 5px 5px rgb(29, 28, 28);
 }
 
 .dark-card .cardP {
+    padding: 5px;
     background-color: #444447;
     color: white;
 }
 
 .dark-card .nome {
     color: white;
+    padding: 3px;
 }
 
 .dark-card .pfp {
-    box-shadow: 3px 5px 5px rgb(80, 78, 78);
-}
-
-.headerRoot .nav-bar {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: left;
-    justify-items: left;
-}
-
-.headerRoot .nav-bar .as {
-    /* display: inline-block; */
-    color: #000000;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #dbe0e2;
-}
-
-.headerRoot .nav-bar .as:hover{
-    background-color: #bbbfc0;
+    box-shadow: 2px 3px 4px rgb(0, 0, 0);
 }
 
 .nome-pagina {
@@ -86,28 +67,27 @@ h1 {
     margin-top: 10px;
     text-align: left;
     border-radius: 10px;
-    background-color: #c7cecf;
+    background-color: rgba(240, 240, 240, 0.8);
     padding: 10px;
     max-width: fit-content;
 }
 
 .students-div {
-    background-color: #d6dddf;
+    background-color: rgba(240, 240, 240, 0.8);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10;
     padding: 10px;
-    border: 1px solid black;
     margin: 20px;
     text-align: center;
     justify-items: center;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px;
+    box-shadow: 3px 3px 5px black;
     max-width: 300px;
     display: inline-block;
 }
 
 .students-div .students-ps {
-    background-color: #f8f8f8;
+    background-color: #d4d4d4;
     border-radius: 10px;
     text-align: center;
     justify-items: center;
@@ -124,7 +104,7 @@ h1 {
 }
 
 .dark-students {
-    background-color: #535353;
+    background-color: #272626;
     color: white;
     box-shadow: 3px 3px 5px rgb(34, 34, 34);
 }
@@ -139,13 +119,12 @@ h1 {
 }
 
 .div-ul {
-    border: 1px solid black;
     border-radius: 5px;
-    background-color: #d2d7d8;
+    background-color: rgba(240, 240, 240, 0.8);
     display: inline-block;
     max-width: 500px;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     box-shadow: 2px 2px 5px;
 }
 
@@ -156,7 +135,7 @@ h1 {
     margin: 10px;
     text-align: center;
     list-style: none;
-    background-color: #c8cbcc;
+    background-color: #e7e7e7;
 }
 
 .div-ul .ul-itens .li-ul {
@@ -166,22 +145,22 @@ h1 {
 }
 
 .div-ul .ul-itens .li-ul:hover {
-    background-color: #c7cecf;
+    background-color: #dbdbdb;
     border-radius: 10px;
 }
 
 .ativo {
-    background-color: #aeb2b3;
+    background-color: #d0d1d1;
     border-radius: 10px;
 }
 
 .dark-div-ul {
-    background-color: #393a3b;
+    background-color: #272626;
     box-shadow: 3px 3px 5px rgb(22, 22, 22);
 }
 
 .dark-div-ul .ul-itens {
-    background-color: #545558;
+    background-color: #343536;
 }
 
 .dark-div-ul .ul-itens .li-ul:hover{
@@ -237,27 +216,36 @@ h1 {
 .user-greeting {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
-    background-color: #dee7eb;
+    background-color: rgba(240, 240, 240, 0.8);
     padding: 10px;
     top: 20px;
     margin-top: 25px;
     margin-right: 70%;
     max-width: max-content;
     z-index: 0;
+    box-shadow: 2px 2px 4px black;
 }
 
 .btn-greeting {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
-    background-color: #dcebf0;
+    background-color: rgba(240, 240, 240, 0.8);
     padding: 10px;
     margin-top: 25px;
     top: 20%;
 }
 
+.btn-greeting:hover {
+    background-color: white;
+}
+
 .dark-div-greeting .btn-greeting {
-    background-color: #3a3b3d;
+    background-color: #272626;
     color: white;
+}
+
+.dark-div-greeting .btn-greeting:hover {
+    background-color: #181717;
 }
 
 .dark-div-greeting .user-greeting{
@@ -267,7 +255,7 @@ h1 {
 
 .div-List {
     border-radius: 10px;
-    background-color: #dadddd;
+    background-color: rgba(240, 240, 240, 0.8);
     padding: 10px;
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -276,32 +264,32 @@ h1 {
 }
 
 .div-List .h3-List {
-    background-color: #979a9b;
+    background-color: rgb(211, 211, 211);
     border-radius: 10px;
     padding: 10px;
 }
 
 .div-List .ul-List li{
     list-style: none;
-    padding: 3px;
+    padding: 6px;
     border-radius: 5px;
 }
 
 .div-List .ul-List li:hover {
-    background-color: #afb3b4;
+    background-color: #e2e2e2;
 }
 
 .dark-div-List {
-    background-color: #3d3e3f;
+    background-color: #272626;
     box-shadow: 3px 3px 5px black;
 }
 
 .dark-div-List .h3-List {
-    background-color: #2e2e31;
+    background-color: #37373b;
 }
 
 .dark-div-List .ul-List li:hover{
-    background-color: #272626;
+    background-color: #1d1c1c;
 }
 
 .progress-bar {
@@ -322,17 +310,28 @@ h1 {
 }
 
 .progress-bar::-webkit-progress-value {
-    background-color: rgb(160, 201, 255);
+    background-color: rgba(197, 197, 197, 0.993)
+}
+
+.dark-progress-bar {
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.dark-progress-bar::-webkit-progress-bar {
+    background: #333;
 }
 
 .dark-progress-bar::-webkit-progress-value {
-    background-color: #2a2b2c;
+    background-color: #000000;
 }
 
 .div-github-api {
     font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
     border-radius: 10px;
-    background-color: #c8cbcc;
+    background-color: rgba(240, 240, 240, 0.8);
     padding: 10px;
     text-align: center;
     margin: 10px;
@@ -344,16 +343,15 @@ h1 {
 }
 
 .div-github-api .github-dados {
-    background-color: #aeb3b4;
+    background-color: #dbdbdb;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
 }
 
 .dark-github-api {
     background-color: #272626;
     box-shadow: 3px 3px 5px black;
-    display: inline-block;
 }
 
 .dark-github-api .github-avatar {
@@ -361,7 +359,7 @@ h1 {
 }
 
 .dark-github-api .github-dados {
-    background-color: #393a3b;
+    background-color: #2c2d2e;
 }
 
 .header-um {
@@ -374,7 +372,7 @@ h1 {
 .btn-toggle-theme {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
-    background-color: #e1e5e6;
+    background-color: rgba(240, 240, 240, 0.8);
     padding: 10px;
     position: absolute;
     margin-left: 83%;
@@ -384,20 +382,28 @@ h1 {
     z-index: 10;
 }
 
+.btn-toggle-theme:hover {
+    background-color: rgb(218, 218, 218);
+}
+
 .p-btn-theme {
-    background-color: #c3c4c4;
-    padding: 3px;
+    background-color: rgba(204, 204, 204, 0.8);
+    padding: 6px;
     border-radius: 5px;
     margin: 5px;
 }
 
 .dark-header .nome-pagina{
-    background-color: #3e4041;
+    background-color: #272626;
 }
 
 .dark-header .btn-toggle-theme{
     background-color: #3a3b3d;
     color: white;
+}
+
+.dark-header .btn-toggle-theme:hover {
+    background-color: rgb(61, 61, 61);
 }
 
 .dark-header .p-btn-theme {
@@ -411,7 +417,7 @@ h1 {
 
 .div-btn-render {
     display: inline-block;
-    background-color: #d6dbe0;
+    background-color: rgba(240, 240, 240, 0.8);
     text-align: center;
     min-width: 200px;
     font-family: Arial, Helvetica, sans-serif;
@@ -422,13 +428,13 @@ h1 {
 
 .div-btn-render .btn-render {
     padding: 10px;
-    background-color: white;
+    background-color: rgba(240, 240, 240, 0.8);
     border-radius: 10px;
     margin: 5px;
 }
 
 .div-btn-render .p-render {
-    background-color: #c6cace;
+    background-color: rgba(240, 240, 240, 0.8);
     padding: 10px;
 }
 
@@ -451,7 +457,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     display: inline-flex;
-    background-color: #e4e5eb;
+    background-color: rgba(240, 240, 240, 0.8);
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgb(99, 98, 98);
 }
@@ -462,3 +468,24 @@ h1 {
     box-shadow: 3px 3px 5px black;
 }
 
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.p-footer {
+    background-color: rgb(228, 229, 233);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px black;
+    align-self: flex-end;
+}
+
+.dark-p-footer {
+    background-color: #272626;
+}
